@@ -11,6 +11,8 @@ import { PagesModule } from './pages/pages.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
+// Temporal
+import { FormsModule } from '@angular/forms';
 // Componentes
 
 import { AppComponent } from './app.component';
@@ -21,18 +23,21 @@ import { RegisterComponent } from './login/register.component';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
-
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
